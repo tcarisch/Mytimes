@@ -7,10 +7,15 @@ header {
 
 .logo {
   display:flex;
+  flex-grow: 1;
+  align-items: center;
   color:Aquamarine;
 }
 
 nav {
   display: flex;
-  
+}
+
+nav span {
+  display:inline-block;
 }
