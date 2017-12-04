@@ -21,3 +21,11 @@ nav {
 nav span {
   display:inline-block;
 }
+
+.content {
+  display flex;
+}
+
+.column large {
+
+}
