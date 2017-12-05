@@ -1,37 +1,63 @@
+body {
+  margin: 0;
+}
 header {
   display:flex;
+  height: 80px;
+  width: 100%;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px solid black;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  border-bottom: 1px solid black;
 }
-div {
+/*div {
   border: 1px solid black;
-}
+}*/
 .logo {
   display:flex;
+  padding-left: 30px;
   flex-grow: 1;
   align-items: center;
   color:MediumAquamarine;
 }
-
-nav {
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
+}
+header nav {
   display: flex;
   align-items: center;
+  padding-right: 40px;
 }
 
 nav span {
   display:inline-block;
+  padding: 20px 10px;
 }
 
 .content {
   display:flex;
+  padding-top: 116px;
+  width: 1232px;
+}
+
+.narrative {
+  margin-top: 16px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
 .column.large {
   display:flex;
   flex-direction: column;
   width: 630px;
+  margin-right: 32px;
 }
 
 .phish-headline
@@ -41,11 +67,13 @@ nav span {
 
 .fall-cancelled
 {
+  display: flex;
   background-image: url(../images/img-story-2.png);
 }
 
 .camera
 {
+  display: flex;
   background-image: url(../images/img-story-3.png);
 }
 
@@ -53,10 +81,28 @@ nav span {
   display:flex;
   flex-direction: column;
   width: 300px;
+  margin-right: 32px;
 }
 
 .cat-ceo {
+  display:flex;
   background-image: url(../images/img-story-1.png);
+}
+
+.cat-ceo, .camera, .fall-cancelled {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  height: 300px;
+  color:white;
+}
+
+.phish-headline{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  height: 300px;
+  color:white;
 }
 
 .column.small {
@@ -64,7 +110,37 @@ nav span {
   flex-direction: column;
   width: 240px;
 }
+.news-bites {
+  display: flex;
+  flex-direction: column;
+}
+.news-bites h3 {
+  text-align: center;
+  margin-bottom: 41px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.news-bites .bite
+{
+  display:block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+  background-color: Whitesmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+
+
+}
+
 .bottom2 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
