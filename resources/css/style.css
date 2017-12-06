@@ -12,7 +12,6 @@ header {
   position: fixed;
   z-index: 1;
   background-color: white;
-  border-bottom: 1px solid black;
 }
 /*div {
   border: 1px solid black;
@@ -60,11 +59,6 @@ nav span {
   margin-right: 32px;
 }
 
-.phish-headline
-{
-  background-image: url(../images/img-story-main.png);
-}
-
 .fall-cancelled
 {
   display: flex;
@@ -90,20 +84,31 @@ nav span {
 }
 
 .cat-ceo, .camera, .fall-cancelled {
+
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   height: 300px;
   color:white;
+  text-align: center;
+  align-items: center;
 }
 
-.phish-headline{
+.phish-headline {
+  display: flex;
+  background-image: url(../images/img-story-main.png);
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
   height: 300px;
   color:white;
+  align-items: center;
+  justify-content: center;
 }
+.phish-headline span {
+  margin-left: 20px;
+}
+
 
 .column.small {
   display:flex;
@@ -129,8 +134,6 @@ nav span {
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
-
-
 }
 
 .bottom2 {
@@ -143,4 +146,29 @@ nav span {
   display: flex;
   flex-direction: column;
   width: 300px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .title {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  display: inline-block;
 }
